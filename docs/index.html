@@ -72,7 +72,7 @@
     </div>
 
 	  <!-- NavBar-->
-	  <nav class="navbar-default" role="navigation">
+	  <nav class="navbar-default navbar-fixed-top" role="navigation">
 		    <div class="container">
 			      <div class="navbar-header">
 				        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -99,8 +99,10 @@
             <div class="col-md-6 col-md-offset-3 text-center wrap_title">
                 <h2>Creator</h2>
                 <p class="lead">題名を作る</p>
-                <a class="btn wow tada btn-embossed btn-primary fadeIn" data-wow-delay="0.8s">unko</a>
+                <a id="ct_btn" class="btn wow tada btn-embossed btn-primary fadeIn" data-wow-delay="0.8s">作成</a>
+            </div>
 
+            <div class="col-md-6 col-md-offset-3 text-center wrap_title" id="c_title">
             </div>
         </div>
     </div>
@@ -123,12 +125,16 @@
 				            <img  class="rotate" src="./assets/img/icon/tactics.svg" alt="Generic placeholder image">
 				            <h3>使い方</h3>
 				            <p class="lead">Creatorの作成ボタンを押して、出てきた文字をコピーするだけ。</p>
+                    <p class="lead">辞書を適当に引いて、ランダム表示しているだけ。</p>
 				            <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
 				        </div><!-- /.col-lg-4 -->
 				        <div class="col-sm-4 wow fadeInDown text-center">
 				            <img  class="rotate" src="./assets/img/icon/chat.svg" alt="Generic placeholder image">
 				            <h3>作者</h3>
-					          <p class="lead">普段は音楽を作ったりプログラミングしている人。<a href="https://twitter.com/Mush_asatake">Twitterはこちら</a>  </p>
+					          <p class="lead">普段は音楽を作ったりプログラミングしている人。</p>
+                    <p class="lead">
+                        <a href="https://twitter.com/Mush_asatake">Twitterはこちら</a><a href="https://twitter.com/Mush_asatake"><i class="fa  fa-twitter-square fa-size"> </i> </a>
+                    </p>
 				            <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
 				        </div><!-- /.col-lg-4 -->
 			      </div><!-- /.row -->
@@ -136,40 +142,34 @@
 	  </div>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3 class="footer-title">Contact us</h3>
-            <p>Vuoi ricevere news su altri template?<br/>
-              Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
-              Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
-            </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h3 class="footer-title">Contact us</h3>
+              <p>author: asatake<br>
+                  Twitter: <a href="https://twitter.com/Mush_asatake"><i class="fa  fa-twitter-square fa-size"> </i> </a><br>
+                  Homepage: <a href="http://asatake.com">asatake.com</a>
+              </p>
 
-			<!-- LICENSE -->
-			<a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy"
-		   property="dc:title">Flatfy Theme </a> by
-		   <a rel="dc:creator" href="http://www.andreagalanti.it"
-		   property="cc:attributionName">Andrea Galanti</a>
-		   is licensed to the public under
-		   <BR>the <a rel="license"
-		   href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative
-		   Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
+			        <!-- LICENSE -->
+              <p>Theme: 
+			        <a href="http://www.andreagalanti.it/flatfy">Flatfy Theme </a> </p>
 
 
           </div> <!-- /col-xs-7 -->
 
           <div class="col-md-5">
-            <div class="footer-banner">
-              <h3 class="footer-title">Flatfy Theme</h3>
-              <ul>
-                <li>12 Column Grid Bootstrap</li>
-                <li>Form Contact</li>
-                <li>Drag Gallery</li>
-                <li>Full Responsive</li>
-                <li>Lorem Ipsum</li>
-              </ul>
-              Go to: <a href="http://andreagalanti.it/flatfy" target="_blank">andreagalanti.it/flatfy</a>
-            </div>
+              <div class="footer-banner">
+                  <h3 class="footer-title">Flatfy Theme</h3>
+                  <ul>
+                      <li>12 Column Grid Bootstrap</li>
+                      <li>Form Contact</li>
+                      <li>Drag Gallery</li>
+                      <li>Full Responsive</li>
+                      <li>Lorem Ipsum</li>
+                  </ul>
+                  Go to: <a href="http://andreagalanti.it/flatfy" target="_blank">andreagalanti.it/flatfy</a>
+              </div>
           </div>
         </div>
       </div>
@@ -180,15 +180,8 @@
     <script src="./assets/js/bootstrap.js"></script>
 	  <script src="./assets/js/owl.carousel.js"></script>
 	  <script src="./assets/js/script.js"></script>
-	  <!-- StikyMenu -->
-	  <script src="./assets/js/stickUp.min.js"></script>
-	  <script type="text/javascript">
-	   jQuery(function($) {
-		     $(document).ready( function() {
-		         $('.navbar-default').stickUp();
-		     });
-	   });
-	  </script>
+    <script type="text/javascript" src="./assets/js/common.js"></script>
+
 	  <!-- Smoothscroll -->
 	  <script type="text/javascript" src="./assets/js/jquery.corner.js"></script> 
 	  <script src="./assets/js/wow.min.js"></script>
@@ -198,6 +191,6 @@
 	  <script src="./assets/js/classie.js"></script>
 	  <script src="./assets/js/uiMorphingButton_inflow.js"></script>
 	  <!-- Magnific Popup core JS file -->
-	  <script src="./assets/js/jquery.magnific-popup.js"></script> 
+	  <script src="./assets/js/jquery.magnific-popup.js"></script>
     </body>
 </html>
