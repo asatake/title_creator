@@ -53,7 +53,7 @@ window.onload = function(){
             $('#tweet-area').append(clone);
 
             // reload twitter scripts to force them to run, converting a to iframe
-            $.getScript('http://platform.twitter.com/widgets.js');
+            $.getScript('https://platform.twitter.com/widgets.js');
         });
     });
 };
