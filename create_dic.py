@@ -22,6 +22,7 @@ for j in es:
     except:
         ja = j.find('.//reb').text
     en = j.find('.//gloss').text
+    en.replace(',', ';')
     word_list.append((i, en, ja))
     i += 1
 
